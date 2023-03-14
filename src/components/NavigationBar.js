@@ -11,11 +11,10 @@ const NavigationBar = () => {
 
   return (
     <div className="navBarContainer">
-      
       <Container>
         <ul className="nav_list_container">
           <li>
-            <Link to="/Home" style={nav_list_decor}>
+            <Link to="/Home" active style={nav_list_decor}>
               Home
             </Link>
           </li>

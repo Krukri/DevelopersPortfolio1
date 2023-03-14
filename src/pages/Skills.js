@@ -1,36 +1,49 @@
+import { Link } from "react-router-dom";
 import "../css/Design.css";
 import { Container } from "react-bootstrap";
 const SkillsPage = () => {
-   let style_border = {
-     border: "solid var(--contrast) 4px",
-     borderRadius: "40px",
-   };
+  let style_border = {
+    border: "solid var(--contrast) 4px",
+    borderRadius: "40px",
+  };
+  let mytextStyled = {
+    color: "var(--contrast)",
+  };
   return (
     <div>
-      <div className="nav_vector_left">
-        <div className="nav_vector1"></div>
-        <div className="nav_vector2"></div>
-      </div>
-      <Container style={style_border}>
-        <div className="home_page_wrapper">
-          <div className="content_wrapper">
-            <div className="col-6 name_content">
-              <h1>Hello! I'm Joseph</h1>
-              <h5>Full-stack Web Developer.</h5>
-            </div>
-            <div className="col-6 text_content">
-              <p>
-                -- I was a Customer Service Representative for 8 years and
-                developed skills in multitasking, attention to details, and
-                problem solving. I set time everyday to learn coding and improve
-                my knowledge and coding skills. I am always excited to learn new
-                things and enthusiastic about challenging and more complicated
-                tasks or projects.
-              </p>
+      <div className="skills_page">
+        <div className="skill_vector_left">
+          <div className="skill_vector1"></div>
+          <div className="skill_vector2"></div>
+        </div>
+        <Container style={style_border}>
+          <div className="skill_page_wrapper">
+            <div className="skills_content_wrapper">
+              <div className="col-6 skills_content">
+                <h1>My Skills:</h1>
+              </div>
+              <div className="next_button">
+                <Link to="/Work">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="3rem"
+                    height="3rem"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      style={mytextStyled}
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </div>
   );
 };
