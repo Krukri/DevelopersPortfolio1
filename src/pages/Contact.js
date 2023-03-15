@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import "../css/Design.css";
 import { Container } from "react-bootstrap";
+
 const ContactInformation = () => {
   let style_border = {
     border: "solid var(--contrast) 4px",
     borderRadius: "40px",
   };
   let mytextStyled = {
+    color: "var(--contrast)",
+  };
+
+  let contact_styled = {
     color: "var(--contrast)",
   };
   return (
@@ -20,10 +25,16 @@ const ContactInformation = () => {
           <div className="contact_page_wrapper">
             <div className="contact_content_wrapper">
               <div className="col-6 contact_content">
-                <h1>Contact me here: </h1>
+                <h1>
+                  <strong style={contact_styled}>Send me </strong> your
+                  request...{" "}
+                </h1>
+              </div>
+              <div className="contact_me_form">
+
               </div>
             </div>
-            <div className="next_button">
+            <div className="next_button_contact">
               <Link to="/Home">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

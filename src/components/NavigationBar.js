@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import "../css/Design.css";
-
+import "../css/DesignResponsiveness.css";
+import logoImage from "../images/KruKri.png";
 const NavigationBar = () => {
   let nav_list_decor = {
     color: "var(--text)",
@@ -14,8 +15,11 @@ const NavigationBar = () => {
       <Container>
         <ul className="nav_list_container">
           <li>
+            <img src={logoImage} alt="jbLogo" className="jbLogo"/>
+          </li>
+          <li>
             <Link to="/Home" active style={nav_list_decor}>
-              Home
+              About Me
             </Link>
           </li>
 
@@ -27,7 +31,7 @@ const NavigationBar = () => {
 
           <li>
             <Link to="/Work" style={nav_list_decor}>
-              Work Experiences
+              My Projects
             </Link>
           </li>
 
@@ -50,6 +54,7 @@ const NavigationBar = () => {
                 <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
               </svg>
             </span>
+            <h6>Dark Mode</h6>
           </div>
         </ul>
       </Container>

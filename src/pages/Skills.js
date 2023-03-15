@@ -9,6 +9,10 @@ const SkillsPage = () => {
   let mytextStyled = {
     color: "var(--contrast)",
   };
+
+  let skill_styled = {
+    color: "var(--contrast)",
+  };
   return (
     <div>
       <div className="skills_page">
@@ -19,8 +23,62 @@ const SkillsPage = () => {
         <Container style={style_border}>
           <div className="skill_page_wrapper">
             <div className="skills_content_wrapper">
-              <div className="col-6 skills_content">
-                <h1>My Skills:</h1>
+              <div className="skills_row">
+                <div className="col-6 skills_content">
+                  <h1>
+                    My <strong style={skill_styled}>Skills:</strong>
+                  </h1>
+
+                  <div className="the_stack_skill">
+                    <h5>The Stacks that I am using:</h5>
+
+                    <div className="stacks_list">
+                      <ul>
+                        <li>
+                          <span className="stack_name_styled">HTML</span>
+                        </li>
+                        <li>
+                          <span className="stack_name_styled">CSS</span>
+                        </li>
+                        <li>
+                          <span className="stack_name_styled">
+                            Bootstrap CSS
+                          </span>
+                        </li>
+                        <li>
+                          <span className="stack_name_styled">JavaScript</span>
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <li>
+                          <span className="stack_name_styled">ReactJS</span>
+                        </li>
+                        <li>
+                          <span className="stack_name_styled">
+                            ReactBootstrap
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="skill_list">
+                  <div className="skill_discussion">
+                    <p>
+                       <strong style={mytextStyled}>- -</strong> The skills that
+                      I have acquired was all came from{" "}
+                      <strong style={skill_styled}>Kodego PH Bootcamp</strong>.
+                      I have learned all the basics in the Fundamentals of Web
+                      Development.{" "}
+                    </p>
+                    <p>
+                      I have scoured through the internet for the resources that
+                      would help me more onto building simple and responsive
+                      websites.
+                    </p>
+                  </div>
+                </div>
               </div>
               <div className="next_button">
                 <Link to="/Work">

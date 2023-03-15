@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoImage from "../images/KruKri.png";
 
 const Footer = () => {
   let social_icons = {
@@ -71,8 +72,10 @@ const Footer = () => {
           </div>
 
           <div className="footer_details">
+            <img src={logoImage} alt="jbLogo" className="jbLogo_footer" />
+
             <h4>Joseph R. Banaag</h4>
-            <p>+6397-6235-8811</p>
+            <p>+63-976-235-8811</p>
             <p>josephrbanaag51@gmail.com</p>
           </div>
         </div>

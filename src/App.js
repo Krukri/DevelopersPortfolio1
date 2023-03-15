@@ -8,8 +8,9 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App" id="dark">
         <NavigationBar></NavigationBar>
+
         <Routes>
           <Route path="/Home" element={<HomePage />}></Route>
           <Route path="/Work" element={<WorkExperience />}></Route>
